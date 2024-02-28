@@ -1,0 +1,318 @@
+#nav2{
+    display: none;
+}
+#artigo{
+    width:100%;
+    height:auto;
+    position: relative;
+    padding-top: 5vw;
+    margin-bottom: 3vw;
+}
+#conhecer{
+    display:none;
+}
+#titulo1{
+    width:100%;
+    height:8.5vw;
+    position: relative;
+    display: inline-flex;
+    margin-bottom: 5vw;
+}
+#titulo1 > div{
+    width:35%;
+    height:100%;
+    background-color:#2471e5;
+    position: absolute;
+    border-top-right-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    border: white 0.4vw solid;
+    left:-1%;
+}
+#titulo1 > div > h2{
+    font-size: 5vw;
+    color: white;
+    font-family: K2D;
+    font-weight: 100;
+    margin-left: 10vw;
+    margin-top:0.5vw;
+}
+#titulo1 > hr{
+    position: absolute;
+    width:50%;
+    right:0;
+    top:50%;
+    border:0.2vw solid white;
+    border-radius:5vw;
+}
+#titulo2{
+    width:100%;
+    height:8.5vw;
+    position: relative;
+    display: inline-flex;
+    margin-bottom: 5vw;
+}
+#titulo2 > div{
+    width:58%;
+    height:100%;
+    background-color:#2471e5;
+    position: absolute;
+    border-top-right-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    border: white 0.4vw solid;
+    left:-1%;
+}
+#titulo2 > div > h2{
+    font-size: 5vw;
+    color: white;
+    font-family: K2D;
+    font-weight: 100;
+    margin-left: 10vw;
+    margin-top:0.5vw;
+}
+#titulo2 > hr{
+    position: absolute;
+    width:27%;
+    right:0;
+    top:50%;
+    border:0.2vw solid white;
+    border-radius:5vw;
+}
+#titulo3{
+    width:100%;
+    height:8.5vw;
+    position: relative;
+    display: inline-flex;
+    margin-bottom: 5vw;
+}
+#titulo3 > div{
+    width:67%;
+    height:100%;
+    background-color:#2471e5;
+    position: absolute;
+    border-top-right-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    border: white 0.4vw solid;
+    left:-1%;
+}
+#titulo3 > div > h2{
+    font-size: 5vw;
+    color: white;
+    font-family: K2D;
+    font-weight: 100;
+    margin-left: 10vw;
+    margin-top:0.5vw;
+}
+#titulo3 > hr{
+    position: absolute;
+    width:18%;
+    right:0;
+    top:50%;
+    border:0.2vw solid white;
+    border-radius:5vw;
+}
+#texto{
+    position:relative;
+    width:80%;
+    margin-left:10%;
+    height:65%;
+    top:35%;
+}
+#texto > p{
+    font-size: 2.2vw;
+    color: white;
+    font-family: Inter;
+    font-weight: 300;
+    margin-left: 10vw;
+    text-align: justify;
+    margin: 0;
+}
+#pdf{
+    display: block;
+    width:70%;
+    height:9vw;
+    margin: auto;
+    background-color: white;
+    margin-bottom:7vw;
+    border-radius: 5vw;
+    transition: 200ms;
+    position: relative;
+    border:none;
+}
+#pdf > p{
+    position: absolute;
+    width:100%;
+    line-height:8.5vw;
+    font-size: 4vw;
+    color:#2471e5;
+    font-family: K2D;
+    text-align: center;
+    border-radius: 5vw;
+    font-weight: bold;
+    top:0;
+}
+#pdf:hover{
+    cursor:pointer;
+    background-color: rgb(223, 223, 223);
+}
+
+@media only screen and (max-width: 600px){
+    #nav2{
+        position:fixed;
+        bottom: 0;
+        width:100%;
+        height: 20vw;
+        z-index: 999;
+        display:block;
+    }
+    #fho{
+        position: absolute;
+        z-index: 999;
+        width:9%;
+        left:45.5%;
+        top:8%;
+        opacity: 0.6;
+    }
+    #fjo{
+        position: absolute;
+        z-index: 999;
+        opacity: 0.6;
+        width:9%;
+        right:28%;
+        top:16%;
+    }
+    #fco{
+        position: absolute;
+        z-index: 999;
+        opacity: 0.6;
+        width:8%;
+        left:29%;
+        top:19%;
+    }
+    #fcb{
+        position: absolute;
+        z-index: 999;
+        width:8%;
+        left:11.5%;
+        top:31%;
+    }
+    #fli{
+        position: absolute;
+        z-index: 999;
+        opacity: 0.6;
+        width:8%;
+        right:11.5%;
+        top:31%;
+    }
+    #selecionado{
+        width:11%;
+        position: absolute;
+        z-index: 999;
+        left:10%;
+        top:81%;
+        border: white 0.6vw solid;
+        background-color: white;
+        border-radius: 5vw;
+        transform: rotate(-5.31deg);
+    }
+    #eli2{
+        position:absolute;
+        width:100%;
+        bottom: 0;
+        z-index: 998;
+    }
+    #eli1{
+        position:absolute;
+        width:100%;
+        bottom:0;
+        z-index: 997;
+    }
+    /**/
+    #conhecer{
+        display: block;
+        background-color: #0038FF;
+        width:100%;
+        height:14vw;
+        margin-bottom:4vw;
+        margin-top: 8vw;
+    }
+    #conhecer > p{
+        width:100%;
+        line-height: 13.8vw;
+        font-family: K2D;
+        font-size: 8vw;
+        color: white;
+        text-align:center;
+    }
+    #artigo{
+        padding-top: 10vw;
+    }
+    #titulo1{
+        height:11.5vw;
+        margin-bottom: 10vw;
+    }
+    #titulo1 > div{
+        border-top-right-radius: 10vw;
+        border-bottom-right-radius: 10vw;
+        border: 1vw solid white;
+        width:47%;
+    }
+    #titulo1 > div > h2{
+        font-size:6.5vw;
+    }
+    #titulo1 > hr{
+        width:43%;
+        border: 0.7vw solid white;
+    }
+    #titulo2{
+        height:11.5vw;
+        margin-bottom: 10vw;
+    }
+    #titulo2 > div{
+        border-top-right-radius: 10vw;
+        border-bottom-right-radius: 10vw;
+        border: 1vw solid white;
+        width:74%;
+    }
+    #titulo2 > div > h2{
+        font-size:6.5vw;
+    }
+    #titulo2 > hr{
+        width:16%;
+        border: 0.7vw solid white;
+    }
+    #titulo3{
+        height:11.5vw;
+        margin-bottom: 10vw;
+    }
+    #titulo3 > div{
+        border-top-right-radius: 10vw;
+        border-bottom-right-radius: 10vw;
+        border: 1vw solid white;
+        width:84%;
+    }
+    #titulo3 > div > h2{
+        font-size:6.5vw;
+    }
+    #titulo3 > hr{
+        width:6%;
+        border: 0.7vw solid white;
+    }
+    #texto{
+        width:90%;
+        margin-left: 5%;
+    }
+    #texto > p{
+        font-size: 4.1vw;
+    }
+    #pdf{
+        margin-top: 20vw;
+        margin-bottom: 35vw;
+        width:90%;
+        height:15vw;
+        border-radius: 10vw;
+    }
+    #pdf > p{
+        line-height: 14.6vw;
+        font-size: 6vw;
+    }
+}
