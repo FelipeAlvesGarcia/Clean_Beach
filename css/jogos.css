@@ -33,7 +33,7 @@ main{
     animation:logcad 7s linear infinite;
     transition: 200ms;
 }
-#info1 > button > p{
+#info1 > button > a > p{
     font-family: Inter;
     position: absolute;
     color:white;
@@ -329,7 +329,7 @@ main{
         animation:logcad 7s linear infinite;
         transition: 200ms;
     }
-    #info2 > button > p{
+    #info2 > button > a > p{
         font-family: Inter;
         position: absolute;
         color:white;
