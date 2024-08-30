@@ -3,15 +3,7 @@
     margin: 0;
     padding: 0;
 }
-body::-webkit-scrollbar {
-    width: 1vw;
-}
-body::-webkit-scrollbar-track {
-    background: gray;
-}
-body::-webkit-scrollbar-thumb {
-    background-color: rgb(70, 70, 70);
-}
+
 @font-face{
     font-family:Inter;
     src: url("font/Inter/Inter-VariableFont_slnt\,wght.ttf");
@@ -24,107 +16,101 @@ body::-webkit-scrollbar-thumb {
     font-family:K2D;
     src: url("font/K2D/K2D-Medium.ttf");
 }
-#Gheader{
-    width:100%;
-    position:relative;
-    height:13vw;
-    background-color: #F9DF9C;
-    z-index: 999;
-    align-items: center;
-    display:flex;
-}
-#Gheader > a{
-    position: absolute;
-    width:40vw;
-    height:8vw;
-    left:5%;
-    align-items: center;
-    display:flex;
-}
-#Gheader > a > h1{
-    font-family:Kaushan;
-    font-size:3.5vw;
-    font-weight: 550;
-    position: absolute;
+.a{
+    text-decoration: none;
     color:black;
+}
+.hover1:hover{
     transition: 200ms;
-    animation:loginh1 600ms ease-out;
-    width:40vw;
-    text-align:left;
+    opacity: 0.8;
+    cursor: pointer;
+    transform: scale(0.99);
+    color:black;
 }
-#Gheader > a > h1:hover{
-    transform:scale(1.05);
-    transition:200ms;
-    cursor:pointer;
+.bg1{
+    background-color: white;
 }
-#Gheaderimg1{
-    position:absolute;
-    width:13vw;
-    height:auto;
-    left:48%;
-    animation: headerimg1 400ms linear;
+.bg2{
+    background-color: #0038FF;
 }
-#Gheaderimg2{
-    position:absolute;
-    width:15vw;
-    height:auto;
-    right:3%;
-    animation: headerimg2 600ms ease-out;
+.bg3{
+    background-color: #F9DF9C;
+}
+.bg4{
+    background-color: #2494E5;
+}
+.font1{
+    font-family:K2D;
+}
+.font2{
+    font-family:Inter;
+}
+.raio{
+    border-radius: 60px;
+}
+.text-justify{
+    text-align: justify;
 }
 
-#Gnav{
-    width:90vw;
-    height:5vw;
+
+
+
+header{
+    background-color: #F9DF9C;
+    position: relative;
+    z-index: 999;
+}
+#cleanBeach{
+    font-family:Kaushan;
+    text-decoration: none;
+    animation:titulo 600ms ease-out;
+    font-size: 1.75rem;
+}
+#imgHeader{
+    margin-right: 1.5rem;
+    width:5.5rem;
+    animation: headerimg 600ms ease-out;
+}
+
+
+
+nav{
     margin: 0 auto;
-    margin-top:0.5vw;
     position:relative;
     animation: anav 1s ease-out;
-    z-index: 998;
-}
-#Gnav > div{
-    position:absolute;
-    width:98%;
-    margin-left:1%;
-    height:auto;
-    display:inline-flex;
-    margin-top:1vw;
-    justify-content: space-between;
-}
-#Gnav > div > a{
-    text-decoration: none;
-}
-#Gnav > div > a > p:hover{
-    transition:200ms;
-    opacity:0.7;
+    z-index: 500;
 }
 #anavSec{
     font-family: K2D;
     color:white;
-    font-size:2.5vw;
+    margin: 0;    
 }
 #anavPri{
-    height:4vw;
-    padding-right:1vw;
-    padding-left:1vw;
+    padding-right:1.25rem;
+    padding-left:1.25rem;
+    padding-top:0.25rem;
+    padding-bottom: 0.15rem;
     font-family: K2D;
     color:#238DDA;
     font-weight: bold;
-    font-size:2.6vw;
     background-color: white;
-    border-top-right-radius:1.5vw;
-    border-top-left-radius:1.5vw;
+    border-top-right-radius:20px;
+    border-top-left-radius:20px;
+    margin: 0;
 }
-#Gnav > hr{
-    position: absolute;
+.hrNav{
+    position:absolute;
+    width:100%;
     bottom:0;
-    margin-left:-2px;
-    border:0.13vw white solid;
-    width:90vw;
+    border:1px white solid;
+    margin: 0;
+    opacity: 1.0;
+    border-radius:5px
 }
 /*-------------------------------------*/
 
 /*-------------Animações---------------*/
-@keyframes loginh1 {
+@keyframes titulo {
     from{
         margin-top:-30vw;
     }
@@ -132,29 +118,21 @@ body::-webkit-scrollbar-thumb {
         margin-top: 0;
     }
 }
-@keyframes headerimg1{
+@keyframes headerimg{
     from{
-        transform: scale(0.8);
+        margin-right:-35rem;
     }
     to{
-        transform:scale(1);
-    }
-}
-@keyframes headerimg2{
-    from{
-        right:-30%;
-    }
-    to{
-        right:3%;
+        margin-right:1.5rem;
     }
 }
 @keyframes anav{
     from{
         margin-top:-20vw;
-        margin-bottom:23vw;
+        margin-bottom:20vw;
     }
     to{
-        margin-top:0.5vw;
+        margin-top:0vw;
         margin-bottom:0;
     }
 }
@@ -174,16 +152,16 @@ body::-webkit-scrollbar-thumb {
 }
 @keyframes ave{
     0%{
-        top:0;
-        left:0;
+        top:80%;
+        left:20%;
     }
     50%{
-        top:1.5%;
-        left:1%;
+        top:81.5%;
+        left:21%;
     }
     100%{
-        top:0;
-        left:0;
+        top:80%;
+        left:20%;
     }
 }
 @keyframes bola{

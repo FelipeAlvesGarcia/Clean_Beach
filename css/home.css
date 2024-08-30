@@ -1,140 +1,89 @@
 /*inicial*/
-#inicial{
-    width:100%;
-    height:40vw;
-    position:relative;
-    margin-top:4vw;
-    display:inline-flex;
+
+#curiosidadeH2{
+    text-align: center;
+    font-size:3rem;
+    color:white;
+    font-family:K2D;
+    font-weight: 100;
 }
+
+
+
+#loginCadastro{
+    border-radius: 30px;
+    border:2px #fff solid;
+    overflow: hidden;
+    animation:logcad 7s linear infinite;
+}
+#login{
+    color:#0038FF;
+    font-family:K2D;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+#cadastro{
+    color:#fff;
+    font-family:K2D;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+
+
+#tcc{
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-top-left-radius: 60px;
+}
+#divTcc2{
+    display: none;
+}
+
+
+
 #carro{
     display:none;
-}
-#divSabia{
-    margin-left:3%;
-    width:67%;
-    height:auto;
-    position:relative;
-}
-#saHeader{
-    width:100%;
-    height:20%;
-    position:absolute;
 }
 #loca2{
     display:none;
 }
-#loca{
-    width:27vw;
-    height:5vw;
-    position: absolute;
-    border:0.2vw white solid;
-    border-radius: 5vw;
-    animation:logcad 7s linear infinite;
-}
-#login{
-    width:11vw;
-    padding-right:16vw;
-    height:5vw;
-    position: absolute;
-    background-color: white;
-    border-radius: 5vw;
-    text-decoration: none;
-    transition: 200ms;
-}
-#login > p{
-    width:11.5vw;
-    line-height:4.8vw;
-    text-align: center;
-    font-family: K2D;
-    font-size: 2vw;
-    font-weight: 500;
-    color:#0038FF;
-    border-radius: 5vw;
-}
-#login:hover{
-    transition:300ms;
-    opacity: 0.7;
-}
-#cadastro{
-    width:16vw;
-    height:5vw;
-    position: absolute;
-    background-color:#0038FF;
-    border-radius: 5vw;
-    border-bottom-left-radius:0;
-    right:0;
-    text-decoration: none;
-    transition: 200ms;
-}
-#cadastro > p{
-    width:16vw;
-    line-height:4.8vw;
-    text-align: center;
-    font-family: K2D;
-    font-size: 2vw;
-    font-weight: 500;
-    color:white;
-    border-radius: 5vw;
-}
-#cadastro:hover{
-    transition:300ms;
-    opacity: 0.7;
-}
-#saHeader > h2{
-    color:white;
-    font-weight:lighter;
-    font-size: 5vw;
-    font-family:K2D;
-    left:47%;
-    position:absolute;
-}
 #nav2{
     display: none;
 }
-#saMain{
-    width:100%;
-    height:80%;
+
+
+#passaro{
+    position: absolute;
     top:20%;
-    position:absolute;
+    left:5%;
 }
 #ave{
     width:3vw;
     z-index:998;
     position:absolute;
-    top:0;
-    left:0;
+    top:80%;
+    left:30%;
     animation: ave 1.2s ease-in-out infinite;
 }
 #coq{
     width:21vw;
     z-index:998;
     position:absolute;
-    bottom:-25%;
+    bottom:-15%;
 }
-#saMain > p{
-    position:absolute;
-    font-size: 2.2vw;
-    font-family: Inter;
-    font-weight: 350;
-    color:white;
-    text-align:justify;
-    width:40vw;
-    top:3%;
-    right:5%;
-}
+
+
+
 #tar{
     width:33vw;
-    position:absolute;
-    top:35%;
-    right: 10%;
     border-radius:1vw;
 }
 #tarfonte{
-    top:98%;
-    right:18%;
     text-decoration: none;
-    position: absolute;
     display:none;
+    position: absolute;
+    bottom: 0;
 }
 #tarfonte > p{
     font-size: 1vw;
@@ -145,71 +94,9 @@
 #tarfonte > p:hover{
     color:#acd6f4;
 }
-#divTcc2{
-    display: none;
-}
-#divTcc{
-    width:30%;
-    height:auto;
-    position:relative;
-}
-#tcc{
-    margin-left:10%;
-    position:absolute;
-    top:5%;
-    width:80%;
-    height:90%;
-    background-color: white;
-    border-bottom-left-radius: 4vw;
-    border-bottom-right-radius: 4vw;
-    border-top-left-radius: 4vw;
-}
-#tcc > h2{
-    font-family: K2D;
-    color:black;
-    font-size:2.3vw;
-    position:absolute;
-    width:100%;
-    text-align: center;
-    top:7%;
-}
-#tcc > p{
-    font-family: Inter;
-    color:black;
-    font-size:1.6vw;
-    position:absolute;
-    width:90%;
-    text-align: justify;
-    top:19%;
-    margin-left:5%;
-}
-#tcc > a{
-    width:70%;
-    height:5vw;
-    background-color: #0062e2;
-    position:absolute;
-    bottom:8%;
-    margin-left:15%;
-    border-radius: 5vw;
-    text-decoration: none;
-    transition: 200ms;
-}
-#tcc > a > p{
-    font-family: K2D;
-    color:white;
-    font-size:1.5vw;
-    text-align: center;
-    width:90%;
-    margin-left:5%;
-    margin-top:0.5vw;
-    line-height:2vw;
-    border-radius: 5vw;
-}
-#tcc > a:hover{
-    cursor: pointer;
-    background-color: #0038FF;
-    transition: 200ms;
-}
+
+
+
 /*destaque1*/
 #destaque1{
     width:100%;
@@ -710,40 +597,10 @@
         border:0.2vw white solid;
         border-top-left-radius: 5.5vw;
         border-bottom-right-radius: 5vw;
-        animation:logcad 7s linear infinite;
         bottom:2%;
         right:10%;
     }
-    #login{
-        position: static;
-        display: block;
-        height:12vw;
-        width:35vw;
-        padding: 0;
-        border-radius: 0;
-        border-top-left-radius: 5vw;
-    }
-    #login > p{
-        width:35vw;
-        line-height: 12vw;
-        font-size:4vw;
-        font-weight: lighter;
-    }
-    #cadastro{
-        position: static;
-        display: block;
-        height:12vw;
-        width:35vw;
-        padding: 0;
-        border-radius: 0;
-        border-bottom-right-radius: 5vw;
-    }
-    #cadastro > p{
-        width:35vw;
-        line-height: 12vw;
-        font-size:4vw;
-        font-weight: lighter;
-    }
+
     #saMain{
         height:90%;
         top:10%;

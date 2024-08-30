@@ -8,27 +8,38 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/home.css">
         <link rel="icon" href="img/header1.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Clean Beach</title>
     </head>
     <body class="home" onload="car()">
-        <header id="Gheader">
-            <a href="index.html"><h1>Clean Beach</h1></a>
-            <img src="img/header1.png" id="Gheaderimg1" alt="Duas crianças brincando com uma bola de praia com roupas praianas">
-            <img src="img/header2.png" id="Gheaderimg2" alt="Três lixeiras, uma verde, uma amarela e uma vermelha (representando a reciclagem na praia)">
-        </header>
-        <nav id="Gnav">
-            <div>
-                <a href="index.html"><p id="anavPri">Home</p></a>
-                <a href="jogos.html"><p id="anavSec">Jogos</p></a>
-                <a href="lixos.html"><p id="anavSec">Lixos</p></a>
-                <a href="CB.html"><p id="anavSec">Clean Beach</p></a>
-                <a href="conta.html"><p id="anavSec">Conta</p></a>
-                <a href="confi.html"><p id="anavSec">Configurações</p></a>
-                <a href="feed.html"><p id="anavSec">Feedback</p></a>
+        <header class="container-fluid">
+            <div class="row align-items-center d-flex py-3">
+                <div class="col-8 d-flex align-items-center">
+                    <a href="index.html" class="ms-4 a hover1 mt-1"><h1 id="cleanBeach">Clean Beach</h1></a>
+                </div>
+                <div class="col-4 d-flex justify-content-end">
+                    <div>
+                        <a href="lixos.html" class="a"><img src="img/header2.png" class="hover1" id="imgHeader" alt="Três lixeiras, uma verde, uma amarela e uma vermelha (representando a reciclagem na praia)"></a>
+                    </div>
+                </div>
             </div>
-            <hr>
-        </nav>
+        </header>
+
+        <div class="container-fluid">
+            <div class="row mt-4 d-sm-flex justify-content-center d-none">
+                <nav class="col-11 col-md-9 col-lg-7 d-flex justify-content-around">
+                    <a href="index.html" class="a"><p id="anavPri">Home</p></a>
+                    <a href="jogos.html" class="a"><p id="anavSec" class="hover1">Recycle Garbage</p></a>
+                    <a href="jogos.html" class="a"><p id="anavSec" class="hover1">Divert Fish</p></a>
+                    <a href="lixos.html" class="a"><p id="anavSec" class="hover1">Lixos</p></a>
+                    <a href="CB.html" class="a"><p id="anavSec" class="hover1">Clean Beach</p></a>
+                    <a href="feed.html" class="a me-4"><p id="anavSec" class="hover1">Feedback</p></a>
+                    <hr class="hrNav">
+                </nav>
+            </div>
+        </div>
+        
         <div id="nav2">
             <hr id="selecionado">
             <a href="CB.html"><img src="img/fcb.png" alt="Clean Beach (Explicações)" id="fcb"></a>
@@ -39,6 +50,7 @@
             <img src="img/eli1.png" id="eli1" alt="nav">
             <img src="img/eli2.png" id="eli2" alt="detalhe da nav">
         </div>
+
         <div id="carro">
             <div id="itens">
                 <div id="caitem1">
@@ -55,55 +67,69 @@
                 </div>
             </div>
         </div>
-        <section id="inicial">
-            <div id="divSabia">
-                <div id="saHeader">
-                    <div id="loca">
-                        <a id="login" href="login.html">
-                            <p><b>Login</b></p>
-                        </a>
-                        <a id="cadastro" href="cadastro.html">
-                            <p><b>Cadastrar</b></p>
-                        </a>    
+
+        <section class="container-fluid position-relative">
+            <div class="row mt-5">
+                <div class="col-9">
+                    <div class="row">
+                        <div class="col-4 d-flex justify-content-center">
+                            <div>
+                                <div id="loginCadastro" class="d-inline-block py-2 mt-2">
+                                    <a href="login.html" id="login" class="a bg1 m-0 p-3 px-4 hover1">
+                                        Login
+                                    </a>
+                                    <a href="cadastro.html" id="cadastro" class="a bg2 m-0 p-3 px-4 hover1">
+                                        Cadastrar
+                                    </a>        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <h2 id="curiosidadeH2">Você Sabia?</h2>
+                            <div class="col-12">
+                                <p class="mt-4 text-white fs-3">
+                                    Uma TARTARUGA foi estudada, no seu corpo <b>tinha 742 
+                                    resíduos de lixo</b>, em que boa parte desse lixo era plástico.
+                                </p>
+                                <div class="d-flex justify-content-center position-relative">
+                                    <img id="tar" src="img/tartaruga.png" alt="tartaruga com lixos dentro do casco">
+                                    <a id="tarfonte" href="https://images.app.goo.gl/hzUR8BwXQ7NM2xdT7">
+                                        <p>fonte: https://images.app.goo.gl/hzUR8BwXQ7NM2xdT7</p>
+                                    </a>
+                                </div>
+                                <div id="loca2">
+                                    <a id="login" href="login.html">
+                                        <p><b>Login</b></p>
+                                    </a>
+                                    <a id="cadastro" href="cadastro.html">
+                                        <p><b>Cadastrar</b></p>
+                                    </a>    
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h2>Você Sabia?</h2>
                 </div>
-                <div id="saMain">
-                    <img id="ave" src="img/ave.gif" alt="ave voando">
-                    <img id="coq" src="img/coqueiro.png" alt="coqueiro">
-                    <p>
-                        Uma TARTARUGA foi estudada, no seu corpo <b>tinha 742 
-                        resíduos de lixo</b>, em que boa parte desse lixo era plástico.
-                    </p>
-                    <img id="tar" src="img/tartaruga.png" alt="tartaruga com lixos dentro do casco">
-                    <a id="tarfonte" href="https://images.app.goo.gl/hzUR8BwXQ7NM2xdT7">
-                        <p>fonte: https://images.app.goo.gl/hzUR8BwXQ7NM2xdT7</p>
-                    </a>
-                    <div id="loca2">
-                        <a id="login" href="login.html">
-                            <p><b>Login</b></p>
-                        </a>
-                        <a id="cadastro" href="cadastro.html">
-                            <p><b>Cadastrar</b></p>
-                        </a>    
+                <div class="col-3">
+                    <div id="tcc" class="bg1 pb-5 me-2">
+                        <h2 class="text-center font1 py-4 pb-3"><u><b>Clean Beach</b></u></h2>
+                        <p class="fs-5 text-justify px-3 pb-4">
+                            &ThickSpace;&ThickSpace;Olá, nossos nomes são Felipe e Airon, e este site faz parte do nosso  projeto
+                            de conclusão de curso, onde o objetivo do projeto é conscientizar as crianças
+                            a não poluírem as praias, para que assim, tenhamos um ambiente mais saudável
+                            e agradável.
+                        </p>
+                        <p class="text-center">
+                            <a href="CB.html" class="raio text-center p-3 bg2 text-white a px-4 hover1">
+                                <b>Conheça o nosso TCC</b>
+                            </a>
+                        </p>
                     </div>
-                </div>
+                </div>    
             </div>
-            <div id="divTcc">
-                <div id="tcc">
-                    <h2><u>Clean Beach</u></h2>
-                    <p>
-                        &ThickSpace;&ThickSpace;Olá, nossos nomes são Felipe e Airon, e este site faz parte do nosso  projeto
-                         de conclusão de curso, onde o objetivo do projeto é conscientizar as crianças
-                          a não poluírem as praias, para que assim, tenhamos um ambiente mais saudável
-                           e agradável.
-                    </p>
-                    <a href="CB.html">
-                        <p>Conheça Nosso Projeto</p>
-                    </a>
-                </div>
-            </div>
+            <img id="ave" src="img/ave.gif" alt="ave voando">
+            <img id="coq" src="img/coqueiro.png" alt="coqueiro">
         </section>
+
         <section id="destaque1">
             <div id="divTcc2">
                 <div id="tcc2">
@@ -168,5 +194,6 @@
             </div>
         </section>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="js/home.js"></script>
 </html>
