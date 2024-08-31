@@ -20,13 +20,17 @@ tar.addEventListener("mouseout", function (){
 //
 
 //Carrossel
-const carro = document.getElementById("carro");
-const itensCarro = document.querySelector("#itensCarro");
-const itens = document.querySelectorAll(".itemCarro")
+const itensCarro = document.querySelector(".itensCarro");
+const itensCarro2 = document.querySelector(".itensCarro2");
+const itens = document.querySelectorAll(".itemCarro");
+const left = document.querySelector("#carroLeft");
+const right = document.querySelector("#carroRight");
 let index = 0;
 let tamanho;
+var intervalo;
+intervalo = setInterval(carrossel, 3500);
 
-function carativo (){
+function carrossel (){
     index++;
     if (tamanho == 50)
     {
@@ -34,7 +38,25 @@ function carativo (){
     }
     tamanho = 50 * index;
     itensCarro.style.transform =  `translatex(${-tamanho}%)`;
+    itensCarro2.style.transform =  `translatex(${-tamanho}%)`;
 }
-var intervalo;
-intervalo = setInterval(carativo, 4000);
+
+left.addEventListener("click", ()=>{
+    clearInterval(intervalo);
+    index = 0;
+    tamanho = 50 * index;
+    itensCarro.style.transform =  `translatex(${-tamanho}%)`;
+    itensCarro2.style.transform =  `translatex(${-tamanho}%)`;
+    intervalo = setInterval(carrossel, 4000);
+})
+
+right.addEventListener("click", ()=>{
+    clearInterval(intervalo);
+    index = 1;
+    tamanho = 50 * index;
+    itensCarro.style.transform =  `translatex(${-tamanho}%)`;
+    itensCarro2.style.transform =  `translatex(${-tamanho}%)`;
+    intervalo = setInterval(carrossel, 4000);
+})
+
 //

@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/home.css">
         <link rel="icon" href="img/header1.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Clean Beach</title>
@@ -39,8 +40,7 @@
                 </nav>
             </div>
         </div>
-        
-        <div id="nav2">
+        <div id="nav2" class="d-block d-sm-none">
             <hr id="selecionado">
             <a href="CB.html"><img src="img/fcb.png" alt="Clean Beach (Explicações)" id="fcb"></a>
             <a href="conta.html"><img src="img/fconta.png" alt="Conta" id="fco"></a>
@@ -53,95 +53,9 @@
 
         <div class="container mt-4 d-block d-sm-none">
             <div class="row mx-1 d-flex justify-content-center">
-                <div class="col-12 px-0" id="carro">
-                    <div id="itensCarro">
-                        <div class="itemCarro">
-                            <a id="jogarDF" class="jogar" href="jogos.html">
-                                Jogar
-                            </a>    
-                            <img src="img/RGba.png" alt="banner do Recycle Garbage">
-                        </div>
-                        <div class="itemCarro">
-                            <a id="jogarRG" class="jogar" href="jogos.html">
-                                Jogar
-                            </a>    
-                            <img src="img/DFba.png" alt="banner do Divert Fish">
-                        </div>
-                    </div>
-                </div>        
-            </div>
-        </div>
-        
-
-        <section class="container-fluid position-relative">
-            <div class="row mt-5">
-                <div class="col-12 col-sm-9">
-                    <div class="row">
-                        <div class="col-4 d-sm-flex justify-content-center d-none">
-                            <div>
-                                <div id="loginCadastro" class="d-inline-block py-2 mt-2">
-                                    <a href="login.html" id="login" class="a bg1 m-0 p-3 px-4 hover1">
-                                        Login
-                                    </a>
-                                    <a href="cadastro.html" id="cadastro" class="a bg2 m-0 p-3 px-4 hover1">
-                                        Cadastrar
-                                    </a>        
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-8">
-                            <h2 id="curiosidadeH2">Você Sabia?</h2>
-                            <div class="col-12">
-                                <p class="mt-4 text-white fs-3 text-justify mx-3 mx-sm-0">
-                                    Uma TARTARUGA foi estudada, no seu corpo <b>tinha 742 
-                                    resíduos de lixo</b>, em que boa parte desse lixo era plástico.
-                                </p>
-                                <div class="d-flex justify-content-center position-relative">
-                                    <img class="w-75" id="tar" src="img/tartaruga.png" alt="tartaruga com lixos dentro do casco">
-                                    <a id="tarfonte" href="https://images.app.goo.gl/hzUR8BwXQ7NM2xdT7">
-                                        <p>fonte: https://images.app.goo.gl/hzUR8BwXQ7NM2xdT7</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="d-flex d-sm-none  justify-content-end m-5 me-3">
-                                <div id="loginCadastro" class="d-inline-block py-2 mt-2">
-                                    <a href="login.html" id="login" class="a bg1 m-0 p-3 px-4 hover1">
-                                        Login
-                                    </a>
-                                    <a href="cadastro.html" id="cadastro" class="a bg2 m-0 p-3 px-4 hover1">
-                                        Cadastrar
-                                    </a>        
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3 d-none d-sm-block">
-                    <div id="tcc" class="bg1 pb-5 me-2">
-                        <h2 class="text-center font1 py-4 pb-3"><u><b>Clean Beach</b></u></h2>
-                        <p class="fs-4 text-justify px-3 pb-4 font2">
-                            &ThickSpace;&ThickSpace;Olá, nossos nomes são Felipe e Airon, e este site faz parte do nosso  projeto
-                            de conclusão de curso, onde o objetivo do projeto é conscientizar as crianças
-                            a não poluírem as praias, para que assim, tenhamos um ambiente mais saudável
-                            e agradável.
-                        </p>
-                        <p class="text-center my-4 font2">
-                            <a href="CB.html" class="raio text-center p-3 bg2 text-white a px-4 hover1">
-                                <b>Conheça o nosso TCC</b>
-                            </a>
-                        </p>
-                    </div>
-                </div>    
-            </div>
-            <img id="ave" src="img/ave.gif" alt="ave voando">
-            <img id="coq" src="img/coqueiro.png" alt="coqueiro">
-        </section>
-
-        <section id="destaque1" class="d-none d-sm-block">
-            <div class="container mt-5">
-                <div class="row">
-                    <div class="col-8 px-0" id="carro">
-                        <div id="itensCarro">
+                <div class="col-12">
+                    <div id="carro">
+                        <div class="itensCarro  ">
                             <div class="itemCarro">
                                 <a id="jogarDF" class="jogar" href="jogos.html">
                                     Jogar
@@ -155,74 +69,137 @@
                                 <img src="img/DFba.png" alt="banner do Divert Fish">
                             </div>
                         </div>
-                    </div>   
+                    </div>
+                </div>         
+            </div>
+        </div>
+        
+
+        <section class="container-fluid position-relative">
+            <div class="row mt-4 d-flex justify-content-center">
+                <div class="col-12 col-sm-10 col-md-8">
+                    <div class="row d-flex justify-content-end">
+                        <div class="col-4 d-xl-flex justify-content-center d-none">
+                            <div>
+                                <div id="loginCadastro" class="d-inline-block py-2 mt-2">
+                                    <a href="login.html" id="login" class="a bg1 m-0 p-3 px-4 hover1">
+                                        Login
+                                    </a>
+                                    <a href="cadastro.html" id="cadastro" class="a bg2 m-0 p-3 px-4 hover1">
+                                        Cadastrar
+                                    </a>        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-9 col-xl-8 px-0 px-lg-5 px-xl-0">
+                            <h2 id="curiosidadeH2">Você Sabia?</h2>
+                            <div class="col-12">
+                                <p class="mb-4 mt-3 text-white fs-4 text-justify mx-3 mx-sm-0">
+                                    Uma TARTARUGA foi estudada, no seu corpo <b>tinha 742 
+                                    resíduos de lixo</b>, em que boa parte desse lixo era plástico.
+                                </p>
+                                <div class="d-flex justify-content-center position-relative">
+                                    <img class="w-100 px-3 px-md-5" id="tar" src="img/tartaruga.png" alt="tartaruga com lixos dentro do casco">
+                                    <a id="tarfonte" href="https://images.app.goo.gl/hzUR8BwXQ7NM2xdT7">
+                                        <p>fonte: https://images.app.goo.gl/hzUR8BwXQ7NM2xdT7</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex d-xl-none  justify-content-center m-4">
+                                <div id="loginCadastro" class="d-inline-block py-2 mt-2">
+                                    <a href="login.html" id="login" class="a bg1 m-0 p-3 px-4 hover1">
+                                        Login
+                                    </a>
+                                    <a href="cadastro.html" id="cadastro" class="a bg2 m-0 p-3 px-4 hover1">
+                                        Cadastrar
+                                    </a>        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 d-none d-lg-block ps-0 ps-xl-5">
+                    <div id="tcc" class="bg1 pb-5 me-2">
+                        <h2 class="text-center font1 py-4 pb-3"><u><b>Clean Beach</b></u></h2>
+                        <p class="text-justify px-3 pb-4 font2">
+                            &ThickSpace;&ThickSpace;Olá, nossos nomes são Felipe e Airon, e este site faz parte do nosso  projeto
+                            de conclusão de curso, onde o objetivo do projeto é conscientizar as crianças
+                            a não poluírem as praias, para que assim, tenhamos um ambiente mais saudável
+                            e agradável.
+                        </p>
+                        <p class="text-center my-4 font2">
+                            <a href="CB.html" class="raio text-center p-3 bg2 text-white a px-4 hover1">
+                                <b>Conheça o nosso TCC</b>
+                            </a>
+                        </p>
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+        <section id="destaque" class="d-sm-block mt-3 pb-5 pb-sm-0">
+            <div class="container-fluid pt-0 pt-sm-5 pb-5 pb-sm-5">
+                <div class="row justify-content-center py-4 py-lg-5 d-none d-sm-flex">
+                    <div class="col-2 d-flex justify-content-center align-items-center px-0">
+                        <div class="carroBotao" id="carroLeft">
+                            <i class="bi bi-arrow-bar-left text-white fs-4"></i>         
+                        </div>              
+                    </div>
+                    <div class="col-8">
+                        <div id="carro">
+                            <div class="itensCarro2">
+                                <div class="itemCarro">
+                                    <a id="jogarDF" class="jogar" href="jogos.html">
+                                        Jogar
+                                    </a>    
+                                    <img src="img/RGba.png" alt="banner do Recycle Garbage">
+                                </div>
+                                <div class="itemCarro">
+                                    <a id="jogarRG" class="jogar" href="jogos.html">
+                                        Jogar
+                                    </a>    
+                                    <img src="img/DFba.png" alt="banner do Divert Fish">
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="col-2 d-flex justify-content-center align-items-center px-0">
+                        <div class="carroBotao" id="carroRight">
+                            <i class="bi bi-arrow-bar-right text-white fs-4"></i>         
+                        </div>              
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 col-sm-10 d-block d-lg-none ps-sm-0 ps-xl-5 my-5">
+                        <div id="tcc" class="bg1 pb-5 raio">
+                            <h2 class="text-center font1 py-4 pb-3"><u><b>Clean Beach</b></u></h2>
+                            <p class="text-justify px-4 pb-4 font2">
+                                &ThickSpace;&ThickSpace;Olá, nossos nomes são Felipe e Airon, e este site faz parte do nosso  projeto
+                                de conclusão de curso, onde o objetivo do projeto é conscientizar as crianças
+                                a não poluírem as praias, para que assim, tenhamos um ambiente mais saudável
+                                e agradável.
+                            </p>
+                            <p class="text-center my-4 font2">
+                                <a href="CB.html" class="raio text-center p-3 bg2 text-white a px-4 hover1">
+                                    <b>Conheça o nosso TCC</b>
+                                </a>
+                            </p>
+                        </div>
+                    </div>  
                 </div>
             </div>
             
-            
-            <!--<div id="divTcc2">
-                <div id="tcc2">
-                    <h2><u>Clean Beach</u></h2>
-                    <p>
-                        &ThickSpace;&ThickSpace;Olá, nossos nomes são Felipe e Airon, e este site faz parte do nosso  projeto
-                         de conclusão de curso, onde o objetivo do projeto é conscientizar as crianças
-                          a não poluírem as praias, para que assim, tenhamos um ambiente mais saudável
-                           e agradável.
-                    </p>
-                    <a href="CB.html">
-                        <p>Conheça Nosso Projeto</p>
-                    </a>
-                </div>
-            </div>
+            <img id="ave" src="img/ave.gif" alt="ave voando">
+            <img id="coq" src="img/coqueiro.png" alt="coqueiro">
             <img id="coco" src="img/coco.png" alt="coco">
             <img id="concha1" src="img/concha1.png" alt="concha do mar rosa claro">
             <img id="concha2" src="img/concha2.png" alt="concha do mar roxa">
             <img id="concha3" src="img/concha3.png" alt="concha do mar amarelo claro">
-            <img src="img/recolendo.png" alt="duas crianças recolendo lixo deixado na areia da praia" id="recolendo">
             <img id="caranguejo" src="img/caranguejo.gif" alt="caranguejo">
-            <img src="img/bola.png" alt="bola de praia quicando" id="bola">
+            <img src="img/bola.png" alt="bola de praia quicando" id="bola" class="d-none d-sm-block">
             <div id="des1jogo">
-                <img alt="Jogo Recycle Garbage" src="img/RG.png">
-                <a href="jogos.html">
-                    <p>Jogar</p>
-                </a>
-            </div>
-            <div id="des1Texto">
-                <p><b>
-                    Vire o herói desta praia e faça mais pontos que seus amigos, sendo o herói 
-                    número 1 da praia !
-                </b></p>
-            </div>-->
         </section>
 
-        <section class="d-none d-sm-none" id="destaque2">
-            <img src="img/peixe.gif" alt="peixe nadando" id="peixe">
-            <img src="img/peixe.gif" alt="peixe nadando" id="peixe2">
-            <img src="img/alga1.png" alt="coral rosa pequeo em cima de areia" id="alga1">
-            <img src="img/alga1.png" alt="coral rosa pequeo em cima de areia" id="alga11">
-            <img src="img/alga2.png" alt="algas atraz de pedras" id="alga2">
-            <img src="img/alga22.png" alt="algas" id="alga22">
-            <img src="img/alga222.png" alt="algas" id="alga222">
-            <img src="img/alga222.png" alt="algas" id="alga2222">
-            <img src="img/alga3.png" alt="algas e ervas marinhas" id="alga3">
-            <img src="img/alga33.png" alt="algas e ervas marinhas" id="alga33">
-            <img src="img/alga333.png" alt="algas e ervas marinhas" id="alga333">
-            <img src="img/alga4.png" alt="algas amareladas" id="alga4">
-            <img src="img/alga5.png" alt="coral laranja" id="alga5">
-            <img src="img/alga55.png" alt="coral laranja" id="alga55">
-            <img src="img/alga6.png" alt="coral rosa grande" id="alga6">
-            <div id="des2jogo">
-                <img alt="Jogo Recycle Garbage" src="img/DF.png">
-                <a href="jogos.html">
-                    <p>Jogar</p>
-                </a>
-            </div>
-            <div id="des2Texto">
-                <p><b>
-                    Vire um ninja e desvie o peixe dos lixos! Vá o mais longe possível e jogue menos lixos no chão!
-                </b></p>
-            </div>
-        </section>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="js/home.js"></script>

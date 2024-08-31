@@ -36,23 +36,44 @@
     border-bottom-right-radius: 60px;
     border-top-left-radius: 60px;
 }
-#divTcc2{
-    display: none;
+#tcc > p{
+    font-size: 1.1rem;
 }
 
-
-
-
+.carroBotao{
+    background-image:linear-gradient(-45deg, rgb(1, 48, 139), rgb(27, 137, 217));
+    width:5rem;
+    height:5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 7px 7px 10px rgba(0,0,0,30%);
+    transition: 200ms ease-in-out;
+}
+.carroBotao:hover{
+    cursor: pointer;
+    opacity: 0.90;
+    transform: scale(1.05);
+}
 #carro{
     margin: auto;
     position: relative;
     overflow: hidden;
-    border-radius: 1.5vw;
+    border-radius: 1.5vw; 
+    width: 100%;  
+    box-shadow: 7px 7px 10px rgba(0,0,0,30%);
 }
-#itensCarro{
-    width:200%;
+.itensCarro{
     display: flex;
     transition: 800ms ease-in-out;
+    width: 200%;
+}
+.itensCarro2{
+    display: flex;
+    transition: 800ms ease-in-out;
+    width: 200%;
+    position: relative;
 }
 .itemCarro{
     width: 100%;
@@ -64,15 +85,21 @@
 #jogarDF{
     position: absolute;
     bottom: 10%;
-    left: 37%;
-    font-size: 60%;
+    left: calc(43% - 20px);
+    font-size: 1rem;
+    padding: 1%;
+    padding-left: 7%;
+    padding-right: 7%;
 
 }
 #jogarRG{
     position: absolute;
     bottom: 10%;
-    right: 37%;
-    font-size: 60%;
+    left: calc(43% - 20px);
+    font-size: 1rem;
+    padding: 1%;
+    padding-left: 7%;
+    padding-right: 7%;
 }
 
 
@@ -88,10 +115,10 @@
     padding-right:7vw;
     font-size: 3vw;
     font-weight: bold;
+    transition: 600ms ease-in-out;
 }
 .jogar:hover{
     cursor: pointer;
-    transition: 600ms;
     transform: scale(1.1);
     opacity: 0.8;
     color:white
@@ -116,15 +143,13 @@
     width:3vw;
     z-index:998;
     position:absolute;
-    top:80%;
-    left:30%;
     animation: ave 1.2s ease-in-out infinite;
 }
 #coq{
-    width:21vw;
+    height:33vw;
     z-index:998;
     position:absolute;
-    bottom:-15%;
+    top:calc(7% - 33vw);
 }
 
 
@@ -136,13 +161,15 @@
     text-decoration: none;
     display:none;
     position: absolute;
-    bottom: 0;
+    bottom: 5%;
 }
 #tarfonte > p{
-    font-size: 1vw;
+    font-size: 0.75rem;
     font-family: Inter;
     font-weight: 350;
     color:white;
+    padding: 0;
+    margin: 0;
 }
 #tarfonte > p:hover{
     color:#acd6f4;
@@ -151,8 +178,7 @@
 
 
 /*destaque1*/
-#destaque1{
-    margin-top: 3vw;
+#destaque{
     position:relative;
     background-color: #F9DF9C;
 }
@@ -161,7 +187,7 @@
     height:auto;
     transform: rotate(-28.17deg);
     position:absolute;
-    left:14.5%;
+    left:12%;
     top:3%;
 }
 #concha1{
@@ -170,15 +196,15 @@
     transform: rotate(28.17deg);
     position:absolute;
     left:3%;
-    top:6%;
+    top:8%;
 }
 #concha2{
     width:3vw;
     height:auto;
     transform: rotate(-160deg);
     position:absolute;
-    right:9%;
-    top:4%;
+    right:3%;
+    top:6%;
 }
 #concha3{
     width:4vw;
@@ -188,17 +214,11 @@
     left:40%;
     bottom:3%;
 }
-#recolendo{
-    width:35%;
-    position:absolute;
-    bottom:-7%;
-    left:55%;
-}
 #caranguejo{
     width:6.7vw;
     position:absolute;
-    bottom:0;
-    left:45%;
+    top:0%;
+    right:11%;
 }
 #bola{
     width:6vw;
@@ -207,329 +227,73 @@
     right:3%;
     animation: bola 10s ease-in-out infinite;
 }
-#des1jogo{
-    width:35%;
-    height:70%;
-    position: absolute;
-    top:17%;
-    left:7%;
-}
-#des1jogo > img{
-    position: absolute;
-    width:100%;
-    height:auto;
-    border-radius:1vw;
-    box-shadow:0.5vw 0.5vw rgba(0,0,0,15%);
-}
-#des1jogo > a{
-    position: absolute;
-    width:55%;
-    height:15%;
-    bottom:7%;
-    left:22.35%;
-    background-color: red;
-    border-radius: 5vw;
-    border:white 0.3vw solid;
-    animation:logcad 7s linear infinite;
-    transition: 200ms;
-}
-#des1jogo > a > p{
-    font-family: Inter;
-    position: absolute;
-    color:white;
-    font-size:3vw;
-    text-align: center;
-    width:100%;
-    line-height:5vw;
-    font-weight: bold;
-    border-radius: 5vw;
-}
-#des1jogo > a:hover{
-    transition: 200ms;
-    background-color: rgb(202, 0, 0);
-    cursor:pointer;
-}
-#des1Texto{
-    position:absolute;
-    right:0;
-    top:10%;
-    width:40%;
-    height:16vw;
-    background-color: #D07D00;
-    border-bottom-left-radius: 4vw;
-    border-top-left-radius: 4vw;
-    box-shadow:0.5vw 0.5vw rgba(0,0,0,10%);
-}
-#des1Texto > p{
-    font-family: Inter;
-    color:white;
-    font-size:2.5vw;
-    text-align: center;
-    width:90%;
-    margin-left:5.5%;
-    margin-top: 5%;
-}
-#destaque2{
-    width:100%;
-    height:50vw;
-    position:relative;
-    background-image:linear-gradient(0deg, rgb(1, 48, 139), rgba(27, 137, 217, 0%));
-}
-#peixe{
-    position: absolute;
-    opacity: 0.8;
-    top:5%;
-    right:-9%;
-    animation: peixe 25s linear infinite;
-    z-index: 9;
-    width:10%;
-}
-#peixe2{
-    position: absolute;
-    opacity: 0.7;
-    top:80%;
-    right:-9%;
-    animation: peixe 40s linear infinite;
-    z-index: 9;
-    width:7%;
-}
-#alga1{
-    position:absolute;
-    bottom:0;
-    left:10%;
-    width:8%;
-    opacity: 0.8;
-    z-index: 998;
-}
-#alga11{
-    position:absolute;
-    bottom:0;
-    right:24%;
-    width:7%;
-    opacity: 0.8;
-    z-index: 998;
-}
-#alga2{
-    position:absolute;
-    bottom:0;
-    left:17%;
-    width:13%;
-    opacity: 0.8;
-    z-index: 998;
-}
-#alga22{
-    position:absolute;
-    bottom:0;
-    right:7%;
-    width:15%;
-    opacity: 0.8;
-    z-index: 998;
-}
-#alga222{
-    position:absolute;
-    bottom:0;
-    left:-2%;
-    width:11%;
-    opacity: 0.8;
-    z-index: 998;
-}
-#alga2222{
-    position:absolute;
-    bottom:0;
-    left:35%;
-    width:11%;
-    opacity: 0.8;
-    z-index: 998;
-}
-#alga3{
-    position:absolute;
-    bottom:0;
-    left:25%;
-    width:14%;
-    opacity: 0.8;
-    z-index: 998;
-}
-#alga33{
-    position:absolute;
-    bottom:0;
-    right:29%;
-    width:11%;
-    opacity: 0.8;
-    z-index: 998;
-}
-#alga333{
-    position:absolute;
-    bottom:0;
-    right:0%;
-    width:12%;
-    opacity: 0.8;
-    z-index: 998;
-}
-#alga4{
-    position:absolute;
-    bottom:0;
-    right:35%;
-    width:12%;
-    opacity: 0.8;
-    z-index: 998;
-}
-#alga5{
-    position:absolute;
-    bottom:0;
-    right:43%;
-    width:12%;
-    opacity: 0.8;
-    z-index: 998;
-}
-#alga55{
-    position:absolute;
-    bottom:0;
-    right:18%;
-    width:8%;
-    opacity: 0.8;
-    z-index: 998;
-}
-#alga6{
-    position:absolute;
-    bottom:0;
-    left:2%;
-    width:11%;
-    opacity: 0.8;
-    z-index: 998;
-}
-#des2jogo{
-    width:35%;
-    height:70%;
-    position: absolute;
-    top:12%;
-    right:7%;
-    z-index: 10;
-}
-#des2jogo > img{
-    position: absolute;
-    width:100%;
-    height:auto;
-    border-radius:1vw;
-}
-#des2jogo > a{
-    position: absolute;
-    width:55%;
-    height:15%;
-    bottom:7%;
-    left:22.35%;
-    background-color: red;
-    border-radius: 5vw;
-    border:white 0.3vw solid;
-    animation:logcad 7s linear infinite;
-    transition: 200ms;
-}
-#des2jogo > a > p{
-    font-family: Inter;
-    position: absolute;
-    color:white;
-    font-size:3vw;
-    text-align: center;
-    width:100%;
-    line-height:5vw;
-    font-weight: bold;
-    border-radius: 5vw;
-}
-#des2jogo > a:hover{
-    transition: 200ms;
-    background-color: rgb(202, 0, 0);
-    cursor:pointer;
-}
-#des2Texto{
-    position:absolute;
-    left:10%;
-    top:25%;
-    width:40%;
-    height:16vw;
-    background-color: #0079D0;
-    border-radius: 4vw;
-    border:white solid 0.3vw;
-    opacity: 0.9;
 
+#nav2{
+    position:fixed;
+    bottom: 0;
+    width:100%;
+    height: 20vw;
+    z-index: 999;
 }
-#des2Texto > p{
-    font-family: Inter;
-    color:white;
-    font-size:2.5vw;
-    text-align: center;
-    width:90%;
-    margin-left:5.5%;
-    margin-top: 5%;
+#fho{
+    position: absolute;
+    z-index: 999;
+    width:9%;
+    left:45.5%;
+    top:8%;
 }
-
-@media only screen and (max-width: 600px){
-    #nav2{
-        position:fixed;
-        bottom: 0;
-        width:100%;
-        height: 20vw;
-        z-index: 999;
-        display:block;
-    }
-    #fho{
-        position: absolute;
-        z-index: 999;
-        width:9%;
-        left:45.5%;
-        top:8%;
-    }
-    #fjo{
-        position: absolute;
-        z-index: 999;
-        opacity: 0.6;
-        width:9%;
-        right:28%;
-        top:16%;
-    }
-    #fco{
-        position: absolute;
-        z-index: 999;
-        opacity: 0.6;
-        width:8%;
-        left:29%;
-        top:19%;
-    }
-    #fcb{
-        position: absolute;
-        z-index: 999;
-        opacity: 0.5;
-        width:8%;
-        left:11.5%;
-        top:31%;
-    }
-    #fli{
-        position: absolute;
-        z-index: 999;
-        opacity: 0.6;
-        width:8%;
-        right:11.5%;
-        top:31%;
-    }
-    #selecionado{
-        width:11%;
-        position: absolute;
-        z-index: 999;
-        left:44.15%;
-        top:71%;
-        border: white 0.6vw solid;
-        background-color: white;
-        border-radius: 5vw;
-    }
-    #eli2{
-        position:absolute;
-        width:100%;
-        bottom: 0;
-        z-index: 998;
-    }
-    #eli1{
-        position:absolute;
-        width:100%;
-        bottom:0;
-        z-index: 997;
-    }
+#fjo{
+    position: absolute;
+    z-index: 999;
+    opacity: 0.6;
+    width:9%;
+    right:28%;
+    top:16%;
+}
+#fco{
+    position: absolute;
+    z-index: 999;
+    opacity: 0.6;
+    width:8%;
+    left:29%;
+    top:19%;
+}
+#fcb{
+    position: absolute;
+    z-index: 999;
+    opacity: 0.5;
+    width:8%;
+    left:11.5%;
+    top:31%;
+}
+#fli{
+    position: absolute;
+    z-index: 999;
+    opacity: 0.6;
+    width:8%;
+    right:11.5%;
+    top:31%;
+}
+#selecionado{
+    width:11%;
+    position: absolute;
+    z-index: 999;
+    left:44.15%;
+    top:71%;
+    border: white 0.6vw solid;
+    background-color: white;
+    border-radius: 5vw;
+}
+#eli2{
+    position:absolute;
+    width:100%;
+    bottom: 0;
+    z-index: 998;
+}
+#eli1{
+    position:absolute;
+    width:100%;
+    bottom:0;
+    z-index: 997;
+}
     
-}
