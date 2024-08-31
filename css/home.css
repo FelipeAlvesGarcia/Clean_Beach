@@ -42,12 +42,66 @@
 
 
 
+
 #carro{
-    display:none;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.5vw;
 }
-#loca2{
-    display:none;
+#itensCarro{
+    width:200%;
+    display: flex;
+    transition: 800ms ease-in-out;
 }
+.itemCarro{
+    width: 100%;
+    position: relative;
+}
+.itemCarro > img{
+    width:100%;
+}
+#jogarDF{
+    position: absolute;
+    bottom: 10%;
+    left: 37%;
+    font-size: 60%;
+
+}
+#jogarRG{
+    position: absolute;
+    bottom: 10%;
+    right: 37%;
+    font-size: 60%;
+}
+
+
+.jogar{
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    border: 2px white solid;
+    border-radius: 10vw;
+    padding-top: 0.5vw;
+    padding-bottom:0.5vw;
+    padding-left:7vw;
+    padding-right:7vw;
+    font-size: 3vw;
+    font-weight: bold;
+}
+.jogar:hover{
+    cursor: pointer;
+    transition: 600ms;
+    transform: scale(1.1);
+    opacity: 0.8;
+    color:white
+}
+
+
+
+
+
+
 #nav2{
     display: none;
 }
@@ -76,7 +130,6 @@
 
 
 #tar{
-    width:33vw;
     border-radius:1vw;
 }
 #tarfonte{
@@ -99,8 +152,6 @@
 
 /*destaque1*/
 #destaque1{
-    width:100%;
-    height:50vw;
     margin-top: 3vw;
     position:relative;
     background-color: #F9DF9C;
@@ -480,253 +531,5 @@
         bottom:0;
         z-index: 997;
     }
-    #carro{
-        display:block;
-        height:55vw;
-        width:95vw;
-        margin: auto;
-        position: relative;
-        margin-left:2.5%;
-        margin-top: 7vw;
-        overflow: hidden;
-    }
-    #itens{
-        width: 190vw;
-        height:55vw;
-        display: flex;
-        transition: 1000ms ease-in-out;
-    }
-    #caitem1{
-        width:95vw;
-        border-radius: 2vw;
-        position: relative;
-    }
-    #caitem1 > img{
-        width:95vw;
-        border-radius: 2vw;
-    }
-    #caitem1 > a{
-        position: absolute;
-        width:35%;
-        height:8vw;
-        bottom:13%;
-        left:32.5%;
-        background-color: red;
-        border-radius: 5vw;
-        border:white 1vw solid;
-        animation:logcad 7s linear infinite;
-        transition: 200ms;
-    }
-    #caitem1 > a > p{
-        font-family: Inter;
-        position: absolute;
-        color:white;
-        font-size:5vw;
-        text-align: center;
-        width:100%;
-        line-height:8vw;
-        font-weight: bold;
-        border-radius: 5vw;
-    }
-    #caitem1 > a:hover{
-        transition: 200ms;
-        background-color: rgb(202, 0, 0);
-        cursor:pointer;
-    }
-    #caitem2{
-        width:95vw;
-        border-radius: 2vw;
-        position: relative;
-    }
-    #caitem2 > img{
-        width:95vw;
-        border-radius: 2vw;
-    }
-    #caitem2 > a{
-        position: absolute;
-        width:35%;
-        height:8vw;
-        bottom:13%;
-        left:32.5%;
-        background-color: red;
-        border-radius: 5vw;
-        border:white 1vw solid;
-        animation:logcad 7s linear infinite;
-        transition: 200ms;
-    }
-    #caitem2 > a > p{
-        font-family: Inter;
-        position: absolute;
-        color:white;
-        font-size:5vw;
-        text-align: center;
-        width:100%;
-        line-height:8vw;
-        font-weight: bold;
-        border-radius: 5vw;
-    }
-    #caitem2 > a:hover{
-        transition: 200ms;
-        background-color: rgb(202, 0, 0);
-        cursor:pointer;
-    }
-    #inicial{
-        height:150vw;
-    }
-    #divSabia{
-        width:100%;
-        margin-left:0%;
-    }
-    #saHeader{
-        height:10%;
-    }
-    #saHeader > h2{
-        left:0%;
-        width:100%;
-        text-align: center;
-        font-size: 9vw;
-    }
-    #loca{
-        display: none;
-    }
-    #loca2{
-        display:block;
-        width:35vw;
-        height:24vw;
-        position: absolute;
-        border:0.2vw white solid;
-        border-top-left-radius: 5.5vw;
-        border-bottom-right-radius: 5vw;
-        bottom:2%;
-        right:10%;
-    }
-
-    #saMain{
-        height:90%;
-        top:10%;
-    }
-    #saMain > p{
-        right:7.5%;
-        top:0%;
-        width:85%;
-        text-align: justify;
-        font-size:5vw;
-    }
-    #ave{
-        left:60%;
-        top:70%;
-        width:9vw;
-    }
-    #coq{
-        bottom:-10%;
-        width:38vw;
-    }
-    #coco{
-        width:7.6vw;
-        left:20%;
-    }
-    #tar{
-        right:7.5%;
-        top:22%;
-        width:85%;
-    }
-    #tarfonte{
-        display: block;
-        left:13%;
-        width:74%;
-        top:60%;
-    }
-    #tarfonte > p{
-        font-size:2.5vw;
-    }
-    #divTcc{
-        display:none;
-    }
-    #destaque1{
-        height:180vw;
-    }
-    #divTcc2{
-        display: block;
-        width:90%;
-        height:140vw;
-        position:relative;
-        z-index: 998;
-        margin-left:5%;
-        left:0;
-        top:10%;
-    }
-    #tcc2{
-        position:absolute;
-        width:100%;
-        height:95%;
-        background-color: white;
-        border-radius: 15vw;
-    }
-    #tcc2 > h2{
-        font-family: K2D;
-        color:black;
-        font-size:9vw;
-        position:absolute;
-        width:100%;
-        text-align: center;
-        top:5%;
-    }
-    #tcc2 > p{
-        font-family: Inter;
-        color:black;
-        font-size:6vw;
-        position:absolute;
-        width:90%;
-        text-align: justify;
-        top:16%;
-        margin-left:5%;
-    }
-    #tcc2 > a{
-        width:70%;
-        height:20vw;
-        background-color: #0062e2;
-        position:absolute;
-        bottom:8%;
-        margin-left:15%;
-        border-radius: 15vw;
-        text-decoration: none;
-        transition: 200ms;
-    }
-    #tcc2 > a > p{
-        font-family: K2D;
-        color:white;
-        font-size:6vw;
-        text-align: center;
-        width:90%;
-        margin-left:5%;
-        margin-top:0.5vw;
-        line-height:8vw;
-        border-radius: 15vw;
-        margin-top: 2vw;
-    }
-    #tcc2 > a:hover{
-        cursor: pointer;
-        background-color: #0038FF;
-        transition: 200ms;
-    }
-    #recolendo{
-        display: none;
-    }
-    #caranguejo{
-        width:14vw;
-        top:1%;
-        left:70%;
-    }
-    #des1Texto{
-        display:none;
-    }
-    #des1jogo{
-        display:none;
-    }
-    #bola{
-        display: none;
-    }
-    #destaque2{
-        display:none;
-    }
+    
 }

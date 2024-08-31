@@ -21,27 +21,20 @@ tar.addEventListener("mouseout", function (){
 
 //Carrossel
 const carro = document.getElementById("carro");
-const itens = document.getElementById("itens");
+const itensCarro = document.querySelector("#itensCarro");
+const itens = document.querySelectorAll(".itemCarro")
+let index = 0;
+let tamanho;
 
-var index = 0;
-var quantia = 2;
-var tamanho;
 function carativo (){
     index++;
-    if (index >= 2)
+    if (tamanho == 50)
     {
         index=0;
     }
     tamanho = 50 * index;
-    itens.style.transform =  `translatex(${-tamanho}%)`;
-    console.log(vwtamanho);
+    itensCarro.style.transform =  `translatex(${-tamanho}%)`;
 }
-
 var intervalo;
-function car () {
-    if (vwtamanho <= 900)
-    {
-        intervalo = setInterval(carativo, 4500);
-    }
-}
+intervalo = setInterval(carativo, 4000);
 //
