@@ -1,5 +1,4 @@
-/*inicial*/
-
+/*Curiosidade*/
 #curiosidadeH2{
     text-align: center;
     font-size:3rem;
@@ -7,9 +6,27 @@
     font-family:K2D;
     font-weight: 100;
 }
-
-
-
+#tar{
+    border-radius:1vw;
+}
+#tarfonte{
+    text-decoration: none;
+    display:none;
+    position: absolute;
+    bottom: 5%;
+}
+#tarfonte > p{
+    font-size: 0.75rem;
+    font-family: Inter;
+    font-weight: 350;
+    color:white;
+    padding: 0;
+    margin: 0;
+}
+#tarfonte > p:hover{
+    color:#acd6f4;
+}
+/*Login e Cadastro*/
 #loginCadastro{
     border-radius: 30px;
     border:2px #fff solid;
@@ -29,8 +46,6 @@
     font-size: 1.2rem;
 }
 
-
-
 #tcc{
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
@@ -39,7 +54,7 @@
 #tcc > p{
     font-size: 1.1rem;
 }
-
+/*Carrossel*/
 .carroBotao{
     background-image:linear-gradient(-45deg, rgb(1, 48, 139), rgb(27, 137, 217));
     width:5rem;
@@ -101,8 +116,7 @@
     padding-left: 7%;
     padding-right: 7%;
 }
-
-
+/*Botão Jogar*/
 .jogar{
     background-color: red;
     text-decoration: none;
@@ -123,64 +137,23 @@
     opacity: 0.8;
     color:white
 }
-
-
-
-
-
-
-#nav2{
-    display: none;
+/*Área Jogos*/
+#jogos{
+    position:relative;
+    background-color: #F9DF9C;
 }
-
-
-#passaro{
-    position: absolute;
-    top:20%;
-    left:5%;
-}
+/*Elementos Gráficos*/
 #ave{
     width:3vw;
     z-index:998;
     position:absolute;
     animation: ave 1.2s ease-in-out infinite;
 }
-#coq{
+#coqueiro{
     height:33vw;
     z-index:998;
     position:absolute;
     top:calc(7% - 33vw);
-}
-
-
-
-#tar{
-    border-radius:1vw;
-}
-#tarfonte{
-    text-decoration: none;
-    display:none;
-    position: absolute;
-    bottom: 5%;
-}
-#tarfonte > p{
-    font-size: 0.75rem;
-    font-family: Inter;
-    font-weight: 350;
-    color:white;
-    padding: 0;
-    margin: 0;
-}
-#tarfonte > p:hover{
-    color:#acd6f4;
-}
-
-
-
-/*destaque1*/
-#destaque{
-    position:relative;
-    background-color: #F9DF9C;
 }
 #coco{
     width:4.5vw;
@@ -227,73 +200,3 @@
     right:3%;
     animation: bola 10s ease-in-out infinite;
 }
-
-#nav2{
-    position:fixed;
-    bottom: 0;
-    width:100%;
-    height: 20vw;
-    z-index: 999;
-}
-#fho{
-    position: absolute;
-    z-index: 999;
-    width:9%;
-    left:45.5%;
-    top:8%;
-}
-#fjo{
-    position: absolute;
-    z-index: 999;
-    opacity: 0.6;
-    width:9%;
-    right:28%;
-    top:16%;
-}
-#fco{
-    position: absolute;
-    z-index: 999;
-    opacity: 0.6;
-    width:8%;
-    left:29%;
-    top:19%;
-}
-#fcb{
-    position: absolute;
-    z-index: 999;
-    opacity: 0.5;
-    width:8%;
-    left:11.5%;
-    top:31%;
-}
-#fli{
-    position: absolute;
-    z-index: 999;
-    opacity: 0.6;
-    width:8%;
-    right:11.5%;
-    top:31%;
-}
-#selecionado{
-    width:11%;
-    position: absolute;
-    z-index: 999;
-    left:44.15%;
-    top:71%;
-    border: white 0.6vw solid;
-    background-color: white;
-    border-radius: 5vw;
-}
-#eli2{
-    position:absolute;
-    width:100%;
-    bottom: 0;
-    z-index: 998;
-}
-#eli1{
-    position:absolute;
-    width:100%;
-    bottom:0;
-    z-index: 997;
-}
-    
