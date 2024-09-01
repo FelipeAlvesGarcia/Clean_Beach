@@ -58,5 +58,4 @@ right.addEventListener("click", ()=>{
     itensCarro2.style.transform =  `translatex(${-tamanho}%)`;
     intervalo = setInterval(carrossel, 4000);
 })
-
 //

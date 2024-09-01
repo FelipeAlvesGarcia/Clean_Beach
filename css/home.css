@@ -38,12 +38,14 @@
     font-family:K2D;
     font-weight: bolder;
     font-size: 1.2rem;
+    background-color: white;
 }
 #cadastro{
     color:#fff;
     font-family:K2D;
     font-weight: bolder;
     font-size: 1.2rem;
+    background-image:linear-gradient(-225deg, rgb(0, 67, 202), rgb(0, 102, 175));
 }
 
 #tcc{
@@ -53,6 +55,9 @@
 }
 #tcc > p{
     font-size: 1.1rem;
+}
+.conhecer{
+    background-image:linear-gradient(-45deg, rgb(0, 64, 192), rgb(0, 111, 190));
 }
 /*Carrossel*/
 .carroBotao{
