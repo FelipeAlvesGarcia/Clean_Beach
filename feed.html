@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Clean Beach</title>
+        <title>Clean Beach - Feedback</title>
     </head>
     <body class="body">
         <!--Header-->
@@ -43,48 +43,53 @@
         </div>
         <div id="nav2" class="d-block d-sm-none">
             <hr id="selecionado">
-            <a href="CB.html"><img src="img/fcb.png" alt="Clean Beach (Explicações)" id="fcb"></a>
-            <a href="conta.html"><img src="img/fconta.png" alt="Conta" id="fco"></a>
-            <a href="index.html"><img src="img/fhome.png" alt="Home (Início)" id="fho"></a>
-            <a href="jogos.html"><img src="img/fjogos.png" alt="Jogos" id="fjo"></a>
-            <a href="lixos.html"><img src="img/flixos.png" alt="Lixos (Curiosidades e Conscientização)" id="fli"></a>
+            <a href="CB.html"><img src="img/fcb.png" alt="Clean Beach (Explicações)" id="fcb" class="aNav2"></a>
+            <a><img src="img/fconta.png" alt="Feedback" id="fco"></a>
+            <a href="index.html"><img src="img/fhome.png" alt="Home (Início)" id="fho" class="aNav2"></a>
+            <a href="jogos.html"><img src="img/fjogos.png" alt="Jogos" id="fjo" class="aNav2"></a>
+            <a href="lixos.html"><img src="img/flixos.png" alt="Lixos (Curiosidades e Conscientização)" id="fli" class="aNav2"></a>
             <img src="img/eli1.png" id="eli1" alt="nav">
             <img src="img/eli2.png" id="eli2" alt="detalhe da nav">
         </div>
         <!--Feedback-->
-        <main class="container-fluid mt-4 px-5">
-            <div class="row d-flex justify-content-center px-5">
-                <div class="col-5">
-                    <h2 class="mt-5">Escreva sua opinião para nós!</h2>
+        <main class="container-fluid mt-4 px-4 px-md-5 pb-5 pb-sm-0">
+            <div class="row d-flex justify-content-center px-0 px-lg-5">
+                <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-5">
+                    <h2 class="mt-5" id="subtitulo">Escreva sua opinião para nós!</h2>
                     <hr id="hrpergu">
                 </div>
             </div>
-            <div class="row mt-5 px-5">
-                <div class="col-6">
-                    <h3>Algum erro  ou bug no site?</h3>
-                    <h3>Você tem alguma ideia para nós?</h3>
+            <div class="row mt-4 mt-md-5 px-0 px-lg-5 mb-4 mb-sm-0">
+                <div class="col-12 col-md-6">
+                    <h3 id="sugestao">Algum erro  ou bug no site?</h3>
+                    <h3 id="sugestao">Você tem alguma ideia para nós?</h3>
                 </div>
-                <div class="col-6">
-                    <h3>Não gostou de algo?</h3>
-                    <h3>Alguma informação incorreta?</h3>
+                <div class="col-12 col-md-6">
+                    <h3 id="sugestao">Não gostou de algo?</h3>
+                    <h3 id="sugestao">Alguma informação incorreta?</h3>
                 </div>
-                <div class="col-8 my-5">
-                    <textarea class="w-100 p-5" type="text" placeholder="Digite aqui..."></textarea>
-                    <div class="d-flex justify-content-center mt-5">
+                <div class="col-12 col-lg-9 mt-4 mt-md-5 mb-3">
+                    <div class="position-relative">
+                        <textarea id="textoFeedback" class="w-100 px-4 pt-4 px-sm-5 pt-sm-5" type="text" placeholder="Digite aqui..."></textarea>
+                        <div class="position-absolute bottom-0 mb-2 d-flex justify-content-center w-100">
+                            <div id="estrelas">
+                                <button id="es1"><img src="img/estrela.png" id="es1i"></button>
+                                <button id="es2"><img src="img/estrela2.png" id="es2i"></button>
+                                <button id="es3"><img src="img/estrela2.png" id="es3i"></button>
+                                <button id="es4"><img src="img/estrela2.png" id="es4i"></button>
+                                <button id="es5"><img src="img/estrela2.png" id="es5i"></button>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-4 mb-5 mb-sm-0">
                         <button id="mandar"><p class="p-3 px-5">Mandar Feedback</p></button>
                     </div>
                 </div>
-            </div>
-            
-            
-            
-            <img src="img/golfinho.png" alt="golfinho" id="golfinho" class="d-none">
-            <div id="estrelas">
-                <button id="es1"><img src="img/estrela.png" id="es1i"></button>
-                <button id="es2"><img src="img/estrela2.png" id="es2i"></button>
-                <button id="es3"><img src="img/estrela2.png" id="es3i"></button>
-                <button id="es4"><img src="img/estrela2.png" id="es4i"></button>
-                <button id="es5"><img src="img/estrela2.png" id="es5i"></button>
+                <div class="col-3 position-absolute bottom-0 end-0 d-none d-lg-flex justify-content-end">
+                    <div class="col-12">
+                        <img src="img/golfinho.png" alt="golfinho" class="w-100">
+                    </div>
+                </div>
             </div>
         </main>
     </body>

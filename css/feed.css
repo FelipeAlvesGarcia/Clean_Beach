@@ -1,3 +1,16 @@
+/*Nav2*/
+#selecionado{
+    width:11%;
+    position: absolute;
+    z-index: 999;
+    left:27.2%;
+    top:73%;
+    border: white 0.6vw solid;
+    opacity: 1;
+    margin: 0;
+    border-radius: 5vw;
+    transform: rotate(-3.99deg);
+}
 /*main*/
 main{
     position:relative;
@@ -7,7 +20,7 @@ main{
     border-top-right-radius: 3vw;
 }
 /*título*/
-h2{
+#subtitulo{
     font-family: K2D;
     color:#245AE5;
     font-size: 1.5rem;
@@ -22,32 +35,32 @@ h2{
     opacity: 0.8;
 }
 /*perguntas*/
-h3{
+#sugestao{
     color:gray;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: Inter;
-    line-height: 3vw;
 }
 /**/
-textarea{
+#textoFeedback{
     min-height:25rem;
-    border-radius:3vw;
-    border: gray solid 0.4vw;
+    border-radius:30px;
+    border: rgb(162, 162, 162) solid 0.4vw;
     font-size:1.25rem;
     font-family:K2D;
     color: rgb(55, 55, 55);
     font-weight: bold;
-    padding-left:0.5vw;
     outline: none;
+    padding-bottom: 5rem;
 }
-textarea::placeholder{
+#textoFeedback::placeholder{
     font-size:1.25rem;
     font-family:K2D;
     color: rgb(177, 177, 177);
+    margin: 0;
 }
 #mandar{
     background-image:linear-gradient(-45deg, rgb(1, 48, 139), rgb(27, 137, 217));
-    border-radius: 5vw;
+    border-radius: 15vw;
     border:none;
     transition: 200ms ease-in-out;
     opacity: 0.8;
@@ -55,7 +68,7 @@ textarea::placeholder{
 #mandar > p{
     font-family: K2D;
     color:white;
-    font-size:2rem;
+    font-size:1.3rem;
     text-align: center;
     border-radius: 5vw;
     transition: 200ms ease-in-out;
@@ -66,35 +79,24 @@ textarea::placeholder{
     opacity: 1;
 }
 /**/
-#golfinho{
-    bottom: 0;
-    right:0;
-    width:23vw;
-}
 #estrelas{
-    bottom:0%;
-    right:20%;
-    width:28%;
-    height:7vw;
-    border-top-left-radius:3vw;
-    border-top-right-radius:3vw;
+    border-top-left-radius:1.5rem;
+    border-top-right-radius:1.5rem;
     background-color: rgba(36, 148, 229, 42%);
-    display: inline-flex;
     justify-content: space-around;
-    padding-left:2vw;
-    padding-right:2vw;
+    padding:1rem;
 }
 #estrelas > button{
-    width:5vw;
-    height:5vw;
-    margin-top:1vw;
+    width:3rem;
+    height:3rem;
+    padding: 0.25rem;
     border:none;
     background: none;
     transition: 200ms;
 }
 #estrelas > button > img{
-    width:5vw;
-    height:5vw;
+    width:100%;
+    height:100%;
 }
 #estrelas > button:hover{
     cursor:pointer;

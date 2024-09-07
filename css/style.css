@@ -17,6 +17,9 @@
     font-family:K2D;
     src: url("font/K2D/K2D-Medium.ttf");
 }
+.zi999{
+    z-index: 999;
+}
 .a{
     text-decoration: none;
     color:black;
@@ -118,7 +121,9 @@ nav{
 }
 
 /**/
-
+.aNav2{
+    opacity: 0.6;
+}
 #nav2{
     position:fixed;
     bottom: 0;
@@ -136,7 +141,6 @@ nav{
 #fjo{
     position: absolute;
     z-index: 999;
-    opacity: 0.6;
     width:9%;
     right:28%;
     top:16%;
@@ -144,7 +148,6 @@ nav{
 #fco{
     position: absolute;
     z-index: 999;
-    opacity: 0.6;
     width:8%;
     left:29%;
     top:19%;
@@ -152,7 +155,6 @@ nav{
 #fcb{
     position: absolute;
     z-index: 999;
-    opacity: 0.5;
     width:8%;
     left:11.5%;
     top:31%;
@@ -160,20 +162,9 @@ nav{
 #fli{
     position: absolute;
     z-index: 999;
-    opacity: 0.6;
     width:8%;
     right:11.5%;
     top:31%;
-}
-#selecionado{
-    width:11%;
-    position: absolute;
-    z-index: 999;
-    left:44.15%;
-    top:71%;
-    border: white 0.6vw solid;
-    background-color: white;
-    border-radius: 5vw;
 }
 #eli2{
     position:absolute;
